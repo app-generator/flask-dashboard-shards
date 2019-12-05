@@ -1,69 +1,98 @@
-# [Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards) - WIP
+# [Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards)
 
-**[Open-Source Admin Dashboard](https://appseed.us/admin-dashboards/open-source)** with Shards Design coded in **[Flask](https://palletsprojects.com/p/flask/)**. **Dashboard** features:
+**[Open-Source Admin Dashboard](https://appseed.us/admin-dashboards/flask-dashboard-shards)** coded in **Flask Framework** on top of **Shards Dashboard** design. **Features**:
 
-- SQLite database, SQLAlchemy ORM
-- Session based authentication flow (login, register)
-- Static Build via Frozen-Flask
-- **MIT License**
+- SQLite, PostgreSQL, SQLAlchemy ORM
+- Alembic (DB schema migrations)
+- Modular design with **Blueprints**
+- Session-Based authentication (via **flask_login**)
+- Forms validation
+- Deployment scripts: Docker, Gunicorn
+- UI Kit: **Shards Dashboard** provided by **DesignRevision**
 
 <br />
 
-![Flask Dashboard Shards - Open-Source Admin Panel](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-shards-intro.gif)
+![Flask Dashboard Shards - Open-Source Dashboard.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-shards-intro.gif)
 
 <br />
 
-## Build from sources - WIP
+## How to use it
 
 ```bash
-$ # clone the sources
+$ # Get the code
 $ git clone https://github.com/app-generator/flask-dashboard-shards.git
 $ cd flask-dashboard-shards
 $
-$ # install modules using a virtualenv
+$ # Virtualenv modules installation (Unix based systems)
 $ virtualenv --no-site-packages env
 $ source env/bin/activate
 $
-$ # install deps 
+$ # Virtualenv modules installation (Windows based systems)
+$ # virtualenv --no-site-packages env
+$ # .\env\Scripts\activate
+$ 
+$ # Install modules
+$ # SQLIte version (no PostgreSQL)
+$ pip3 install -r requirements-sqlite.txt
+$ 
+$ # OR with PostgreSQL connector
 $ pip install -r requirements.txt
 $
-$ # Create SQLite database using the Flask console
-$ flask shell
->> from app import db
->> db.create_all()
->> quit() 
-$
-$ # SQLite database.db should be created in the app folder:
-$ # app\database.db
-$
 $ # Set the FLASK_APP environment variable
-$ (Windows) set FLASK_APP=app.py
-$ (Unix) export FLASK_APP=app.py
-$ (Powershell) $env:FLASK_APP = ".\app.py"
-$ 
-$ flask app.py
-$ # app is running on port 5000
+$ (Unix/Mac) export FLASK_APP=run.py
+$ (Windows) set FLASK_APP=run.py
+$ (Powershell) $env:FLASK_APP = ".\run.py"
+$
+$ # Set up the DEBUG environment
+$ # (Unix/Mac) export FLASK_ENV=development
+$ # (Windows) set FLASK_ENV=development
+$ # (Powershell) $env:FLASK_ENV = "development"
+$
+$ # Start the application (development mode)
+$ # --host=0.0.0.0 - expose the app on all network interfaces (default 127.0.0.1)
+$ # --port=5000    - specify the app port (default 5000)  
+$ flask run --host=0.0.0.0 --port=5000
+$
+$ # Access the dashboard in browser: http://127.0.0.1:5000/
 ```
 
 <br />
 
-## Want more? Go PRO!
+## Docker execution
+
+The application can be easily excuted in a docker container. The steps:
+
+> Get the code
+
+```bash
+$ git clone https://github.com/app-generator/flask-dashboard-shards.git
+$ cd flask-dashboard-shards
+```
+
+> Start the app in Docker
+
+```bash
+$ sudo docker-compose pull && sudo docker-compose build && sudo docker-compose up -d
+```
+
+Visit `http://localhost:5000` in your browser. The app should be up & running.
 
 <br />
 
-| [Flask Dashboard Material](https://appseed.us/admin-dashboards/flask-dashboard-material-pro) | [Flask Dashboard Argon](https://appseed.us/admin-dashboards/flask-dashboard-argon-pro) | [Flask Dashboard Black](https://appseed.us/admin-dashboards/flask-dashboard-black-pro) |
-| --- | --- | --- |
-| [![Flask Dashboard Material PRO](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-material-pro-intro.gif)](https://appseed.us/admin-dashboards/flask-dashboard-material-pro)  | [![Flask Dashboard Argon PRO](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-argon-pro-intro.gif)](https://appseed.us/admin-dashboards/flask-dashboard-argon-pro) | [![Flask Dashboard Black PRO](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-black-pro-intro.gif)](https://appseed.us/admin-dashboards/flask-dashboard-black-pro)
+## Credits & Links
+
+- [Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards) - Product page
+- [Flask Framework](https://www.palletsprojects.com/p/flask/) - Offcial website
+- [Flask Dashboard - Open-Source Boilerplates](https://dev.to/sm0ke/flask-dashboard-open-source-boilerplates-dkg) - A popular article published on Dev.to platform
+- [Flask Dashboard](https://admin-dashboards.com/tags/flask-dashboard) - Index provided by **Admin-Dashboards.com**
 
 <br />
 
-## Resources
+## License
 
-- [Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards) - Official Product Page
-- [Flask Dashboard Shards](https://flask-dashboard-shards.appseed.us/) - Live DEMO
-- [Flask Framework](https://palletsprojects.com/p/flask/) - official website
- 
+@MIT
+
 <br />
- 
+
 ---
-[Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards) provided by **AppSeed**
+[Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards) - provided by **AppSeed**
