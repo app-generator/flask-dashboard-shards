@@ -26,7 +26,9 @@
                 {% if msg %}
                   {{ msg | safe }}
                 {% else %}
-                  Complete your credentials
+                  Complete your credentials 
+                  <br />
+                  OR <a href={{ url_for('base_blueprint.login') }}>authenticate</a> using an existing account.
                 {% endif %}  
 
               </h6>
