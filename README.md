@@ -1,4 +1,4 @@
-# [Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards)
+# [Flask Dashboard - Shards Design](https://appseed.us/admin-dashboards/flask-dashboard-shards)
 
 > **Open-Source Admin Dashboard** coded in **Flask Framework** by **AppSeed** [Web App Generator](https://appseed.us/app-generator) - Features:
 
@@ -14,11 +14,11 @@
 
 > Links
 
-- [Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards) - Product page
-- [Flask Dashboard Shards](https://docs.appseed.us/admin-dashboards/flask-dashboard-shards/) - Documentation
-- [Flask Dashboard Shards](https://flask-dashboard-shards.appseed.us/login) - LIVE Demo
-- More [Flask Admin Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **AppSeed**
-- [Free Admin Dashboards](https://appseed.us/admin-dashboards/open-source) - index hosted by **AppSeed**
+- [Flask Dashboard - Shards Design](https://appseed.us/admin-dashboards/flask-dashboard-shards) - Product page
+- [Flask Dashboard Shards Docs](https://docs.appseed.us/admin-dashboards/flask-dashboard-shards/) - Documentation
+- [Flask Dashboard Shards Demo](https://flask-dashboard-shards.appseed.us/login) - LIVE App
+- More [Flask Dashboards](https://appseed.us/admin-dashboards/flask) - index hosted by **AppSeed**
+- More [Admin Dashboards](https://appseed.us/admin-dashboards) - index hosted by **AppSeed**
 
 <br />
 
@@ -171,4 +171,4 @@ A high-quality & free Bootstrap admin dashboard template pack that comes with lo
 <br />
 
 ---
-[Flask Dashboard Shards](https://appseed.us/admin-dashboards/flask-dashboard-shards) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Flask Dashboard - Shards Design](https://appseed.us/admin-dashboards/flask-dashboard-shards) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
