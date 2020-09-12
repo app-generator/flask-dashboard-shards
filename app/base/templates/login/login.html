@@ -45,13 +45,13 @@
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="feFirstName">Username</label>
-                          <input class="form-control form-control-lg" placeholder="Username" type="text" name="username" value="test">
+                          {{ form.username(placeholder="Username", class="form-control form-control-lg") }}
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="feEmailAddress">Password</label>
-                          <input class="form-control form-control-lg" placeholder="Password" type="password" name="password" value="pass">
+                          {{ form.password(placeholder="Password", class="form-control form-control-lg", type="password") }}
                         </div>
                       </div>
                       <button type="submit" name="login" class="btn btn-accent">Login</button>
