@@ -28,8 +28,6 @@
                 {% else %}
                 <span>
                   Use default credentials: test / pass
-                  <br />
-                  OR <a href={{ url_for('base_blueprint.create_user') }} >create your own user</a>
                 </span>
                 {% endif %}  
 
@@ -47,13 +45,13 @@
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="feFirstName">Username</label>
-                          {{ form.username(placeholder="Username", class="form-control form-control-lg") }}
+                          <input class="form-control form-control-lg" placeholder="Username" type="text" name="username" value="test">
                         </div>
                       </div>
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="feEmailAddress">Password</label>
-                          {{ form.password(placeholder="Password", class="form-control form-control-lg", type="password") }}
+                          <input class="form-control form-control-lg" placeholder="Password" type="password" name="password" value="pass">
                         </div>
                       </div>
                       <button type="submit" name="login" class="btn btn-accent">Login</button>
