@@ -173,4 +173,4 @@ A high-quality & free Bootstrap admin dashboard template pack that comes with lo
 <br />
 
 ---
-[Flask Dashboard](https://appseed.us/admin-dashboards/flask?ref=gh) Shards - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Flask Dashboard](https://appseed.us/admin-dashboards/flask?ref=gh) Shards - Provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
