@@ -21,6 +21,7 @@ A high-quality & free Bootstrap admin dashboard template pack that comes with lo
 
 - [Flask Dashboard - Shards Design](https://appseed.us/admin-dashboards/flask-dashboard-shards) - Product page
 - [Flask Dashboard Shards Demo](https://flask-dashboard-shards.appseed.us/) - LIVE App
+- [Flask Tutorial](https://github.com/app-generator/tutorial-flask) - Getting started with Flask
 
 <br />
 
